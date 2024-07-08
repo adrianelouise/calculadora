@@ -9,11 +9,6 @@ if (isNaN(num1) || isNaN(num2)){
     throw new Error ("Você precisa digitar números!")
 }
 
-const operadorValido = [ '+', '-', '*', '/', '%']
-if(!operadorValido.includes(operador)){
-    throw new Error ("Operação inválida! Digite uma operação válida.")
-}
-
 switch (operador){
     case '+' :
         resultado = num1 + num2;
@@ -30,7 +25,7 @@ switch (operador){
     resultado = num1 + num2 /100  
         break;
     default:
-        console.log('operador invalido')
+        console.log('Operador inválido!')
         break;
 }
                 
